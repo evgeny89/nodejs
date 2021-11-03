@@ -24,7 +24,6 @@ class Handler {
         } else {
             this.#timers.forEach(target => {
                 const diffTime = target.timeToSeconds() - now;
-                console.log(diffTime);
                 if (diffTime > 0) {
                     console.log(target.time, Handler.#leftTimeToString(diffTime));
                 } else {
