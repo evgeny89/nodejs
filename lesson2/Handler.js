@@ -1,5 +1,6 @@
 class Handler {
     static #timers = [];
+    static interval = null;
 
     static setTimer(timer) {
         this.#timers.push(timer);
@@ -19,9 +20,11 @@ class Handler {
         const now = Date.now();
         if (!this.#timers.length) {
             console.log("нет ниодного таймера");
+            clearInterval(this.interval);
         } else {
             this.#timers.forEach(target => {
                 const diffTime = target.timeToSeconds() - now;
+                console.log(diffTime);
                 if (diffTime > 0) {
                     console.log(target.time, Handler.#leftTimeToString(diffTime));
                 } else {
