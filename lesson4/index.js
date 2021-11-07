@@ -11,7 +11,7 @@ const {
     transformChunks
 } = require('./libs');
 
-const reader = () => {
+const lesson4 = () => {
     class MyEmitter extends EventEmitter {}
 
     const myEmitter = new MyEmitter();
@@ -40,4 +40,4 @@ const reader = () => {
     myEmitter.emit("changePath", options.path ?? process.cwd())
 }
 
-module.exports = reader;
+module.exports = lesson4;
