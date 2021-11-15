@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/evgeny89/nodejs#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
