@@ -19,6 +19,8 @@
   "dependencies": {
     "colors": "^1.4.0",
     "nodemon": "^2.0.15",
-    "socket.io": "^4.3.2"
+    "socket.io": "^4.3.2",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.2.1"
   }
 }
